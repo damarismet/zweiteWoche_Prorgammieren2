@@ -1,6 +1,5 @@
 package ch.fhnw.HW;
 
-
 import java.io.File;
 import java.util.ArrayList;
 public class Main {
@@ -33,7 +32,7 @@ public class Main {
             }
             summe = summe - lowestgrade;
             average = summe / ((studentList.get(i).getGradeList().size()-1));
-            System.out.println("The average grade for " + studentList.get(i).getName() +" (" +studentList.get(i).getMajor() + ")" + " is: " + Math.round(average * 10) / 10.0);
+            System.out.println("The average grade for " + studentList.get(i).getName() +" (" +studentList.get(i).getMajor() + ") is: " + Math.round(average * 10) / 10.0);
         }
     }
 }

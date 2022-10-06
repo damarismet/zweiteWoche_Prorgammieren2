@@ -56,8 +56,8 @@ public class Scanner {
             while ((line = reader.readLine()) != null) {
                 String[] keyValuePair = line.split("\t", 2);
                 if (keyValuePair.length > 1) {
-                    String key = keyValuePair[0];
-                    String value = keyValuePair[1];
+                    String key = keyValuePair[0].trim();
+                    String value = keyValuePair[1].trim();
                     map.put(key, value);
                 }
                 else {
